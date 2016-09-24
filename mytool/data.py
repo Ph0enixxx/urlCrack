@@ -28,5 +28,6 @@ class Data(object):
 		print(self.set('bbb','啊啊啊'))
 		print(self.get('bbb'))
 		print(self.redis.hgetall(self.hashName))
-a = Data()
-a.test()
+if __name__ == '__main__':
+	a = Data()
+	a.test()
