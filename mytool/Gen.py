@@ -9,12 +9,20 @@ def gen(start='000000',end='zzzzzz'):
 			for c in text:
 				for d in text:
 					for e in text:
-						lst = [a,b,c,d,e]
-						yield "".join(lst)
+						for f in text:
+							lst = [a,b,c,d,e,f]
+							yield "".join(lst)
 
-x = gen()
-for i in x:
-	pass
-	#print(i)
-print("ok")
 
+if __name__ == '__main__':
+	x = gen()
+	# for i in x:
+	# 	pass
+	# 	#print(i)
+	# print("ok")
+	# for i in range(1,1000):
+	# 	print(x.__next__())
+	print(next(x))
+	print(next(x))
+	print(next(x))
+	print(next(x))
